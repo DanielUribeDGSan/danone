@@ -1,0 +1,65 @@
+@import '../utils/index.scss';
+
+.section__register {
+  min-height: 100vh;
+  position: relative;
+
+  & .banner-title {
+    & .logo {
+      width: auto;
+      margin-bottom: 4rem;
+      @media #{$md} {
+        width: 30vw;
+        margin-top: 1.5rem;
+      }
+      @media #{$sm,$xs} {
+        width: 40vw;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+    & .title {
+      width: 20vw;
+      @media #{$mw-xl} {
+        width: 25vw;
+      }
+      @media #{$md} {
+        width: 30vw;
+      }
+      @media #{$sm,$xs} {
+        width: 40vw;
+      }
+    }
+  }
+
+  & .img-left-bottom {
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    width: 15vw;
+    z-index: -1;
+    @media #{$sm,$xs} {
+      width: 25vw;
+    }
+  }
+  & .img-right-top {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 15vw;
+    z-index: -1;
+    @media #{$sm,$xs} {
+      width: 25vw;
+    }
+  }
+  & .img-right-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 15vw;
+    z-index: -1;
+    @media #{$sm,$xs} {
+      width: 25vw;
+    }
+  }
+}
